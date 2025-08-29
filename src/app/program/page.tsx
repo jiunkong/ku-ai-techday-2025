@@ -1,12 +1,24 @@
 const Row = (props: { start: string, end: string, program: string, organizer?: string, note?: string, center?: boolean }) => {
     return (
         <>
-            <tr className="h-20">
-                <td className="pl-2">{props.start} - {props.end}</td>
-                <td className={`pl-2 text-lg font-bold ${props.center ? "text-center text-(--title)" : ""}`}>{props.program}</td>
-                <td className="pl-2">
+            <tr className={`${props.center ? "h-10" : "h-20"} lg:h-20`}>
+                <td className="pl-2 text-sm lg:text-md w-24 lg:w-36 text-center lg:text-left">{props.start} - {props.end}</td>
+
+                <td className={`hidden lg:table-cell pl-2 text-lg font-bold ${props.center ? "text-center text-(--title)" : ""}`}>{props.program}</td>
+                <td className="hidden lg:table-cell pl-2">
                     <div>{props.organizer}</div>
                     { props.note && <span className="font-bold text-sm text-(--title) before:content-['•_']">{props.note}</span> }
+                </td>
+
+                <td className="lg:hidden">
+                    <div className={`font-bold ${props.center ? "text-(--title)" : ""}`}>{props.program}</div>
+                     { props.organizer && 
+                        <div>
+                            <span className="text-sm">{props.organizer}</span>
+                            <span className="w-2 inline-block"></span>
+                            { props.note && <span className="text-sm text-(--title) font-bold">{props.note}</span> }
+                        </div>
+                    }
                 </td>
             </tr>
             <tr className="h-[1px] bg-(--delimiter)"><td colSpan={3}></td></tr>
@@ -17,15 +29,15 @@ const Row = (props: { start: string, end: string, program: string, organizer?: s
 export default function Program() {
     return (
         <div className="w-screen mt-15 text-black">
-            <h1 className="font-bold text-5xl text-center text-(--title)">PROGRAM</h1>
+            <h1 className="font-bold text-4xl lg:text-5xl text-center text-(--title)">PROGRAM</h1>
             <table className="mx-auto mt-10 border-separate border-spacing-x-4 table-fixed mb-20">
-                <thead className="border-b-2 text-lg text-left">
-                    <tr>
+                <thead className="text-lg text-left">
+                    <tr className="hidden lg:table-row">
                         <th className="pl-2 w-36">시간</th>
-                        <th className="pl-2 lg:min-w-180">프로그램</th>
+                        <th className="pl-2 min-w-160">프로그램</th>
                         <th className="pl-2">연사</th>
                     </tr>
-                    <tr className="h-3"></tr>
+                    <tr className="h-3 hidden lg:table-row"></tr>
                     <tr className="h-[2px] bg-(--title)"><th colSpan={3}></th></tr>
                 </thead>
                 <tbody>
