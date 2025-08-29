@@ -5,7 +5,11 @@
   --background: #0a0a0a;
   --foreground: #ededed;
 
-  --hover: #6495ED;
+  --link: #6495ED;
+  --subtext: #dadada;
+
+  --title: rgb(2, 48, 108);
+  --delimiter: #979797;
 }
 
 body {
@@ -13,5 +17,5 @@ body {
   color: var(--foreground);
   font-family: Pretendard;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }

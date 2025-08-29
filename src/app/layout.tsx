@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Image from "next/image";
+import { Background } from "@/components/Background";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,14 +15,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`antialiased relative w-screen h-screen`}
-      >
-        <Image className="opacity-40" src={"/background.jpg"} fill style={{ objectFit: "cover", objectPosition: "center" }} alt=""/>
+      > 
         <div className="absolute top-0">
+            <Background/>
             <Header/>
-            {children}
+            <div className="relative">
+              {children}
+            </div>
         </div>
       </body>
     </html>
