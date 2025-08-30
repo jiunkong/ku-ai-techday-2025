@@ -28,8 +28,8 @@ const Row = (props: { start: string, end: string, program: string, organizer?: s
 
 export default function Program() {
     return (
-        <div className="w-screen mt-15 text-black">
-            <h1 className="font-bold text-4xl lg:text-5xl text-center text-(--title)">PROGRAM</h1>
+        <div className="w-screen mt-30 text-black">
+            <h1 className="font-black text-4xl lg:text-5xl text-center text-(--title)">PROGRAM</h1>
             <table className="mx-auto mt-10 border-separate border-spacing-x-4 table-fixed mb-20">
                 <thead className="text-lg text-left">
                     <tr className="hidden lg:table-row">

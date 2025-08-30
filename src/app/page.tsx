@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function Home() {
     return (
         <>            
-            <div className="px-5 lg:px-15 mt-15 w-screen">
+            <div className="px-5 lg:px-15 mt-30 w-screen">
                 <h2 className="lg:text-2xl font-bold">
                     고려대학교 ICT명품인재양성사업단/초지능연구센터
                 </h2>
                 <h1 className="text-5xl lg:text-6xl font-bold mt-2 mb-15 lg:mb-25">
                     AI TECH DAY 2025
                 </h1>
-                <LinkText link="" className="origin-left">
+                <LinkText link="/program" className="origin-left">
                     <div className="flex gap-2 text-lg items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
@@ -19,7 +19,7 @@ export default function Home() {
                         <span>2025.10.15(수) 10:00 ~ 18:00</span>
                     </div>
                 </LinkText>
-                <LinkText link="" className="origin-left mt-2">
+                <LinkText link="/location" className="origin-left mt-2">
                     <div className="flex gap-2 text-lg items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
