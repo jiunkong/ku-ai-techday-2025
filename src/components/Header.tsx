@@ -22,8 +22,8 @@ export const Header = () => {
                 <div className="hidden lg:flex gap-5">
                     <LinkText link="/" white>Home</LinkText>
                     <LinkText link="/program" white>프로그램</LinkText>
-                    <LinkText link="/professor" white>교수소개</LinkText>
                     <LinkText link="/speaker" white>연사소개</LinkText>
+                    <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" white>사전등록</LinkText>
                     <LinkText link="/location" white>오시는길</LinkText>
                 </div>
                 <div className="lg:hidden" onClick={() => setOpened(true)}>

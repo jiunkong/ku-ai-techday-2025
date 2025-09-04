@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import Image from "next/image";
 import { Background } from "@/components/Background";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "AI Tech Day 2025",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header/>
         <div className="relative">
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

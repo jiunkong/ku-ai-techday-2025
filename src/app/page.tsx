@@ -48,7 +48,9 @@ export default function Home() {
                 </div>
                 <div>
                     <h3 className="font-bold text-2xl mt-10">초청강연</h3>
-                    <p className="mt-1">삼성전자, KT, LG AI 연구소, AWS, 네이버, 크래프톤</p>
+                    <p className="mt-1">KT, LG AI 연구소, 정보통신기획평가원, 삼성전자, AWS, 네이버, 크래프톤</p>
+                    <h3 className="font-bold text-2xl mt-5">Recruiting 참여 기업</h3>
+                    <p className="mt-1">루닛, 삼성전자, 업스테이지, 퓨리오사 AI, 한화비전, AWS, KT, LG AI 연구소, SKT</p>
                 </div>
                 <div className="mt-15 lg:mt-0 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
                     <div className="w-50 h-50 overflow-hidden rounded-full mx-auto">

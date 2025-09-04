@@ -9,6 +9,33 @@ interface Speech {
     content: string
 }
 
+const ProfessorItem = (props: { name: string, image: string, url: string }) => {
+    return (
+        <Link href={props.url} target="_blank">
+            <motion.div className="flex items-center hover:bg-(--hover-bg) transition-colors duration-200 py-3 w-70 cursor-pointer rounded-lg"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.2 }}>
+                
+                    <div className="overflow-hidden rounded-full w-15 h-15 lg:w-20 lg:h-20 ml-2 lg:ml-5">
+                        <Image src={props.image} width={300} height={300} alt="" className="w-full h-full object-cover"/>
+                    </div>
+                    <div className="ml-8">
+                        <div className="font-bold text-lg ml-2">
+                            {props.name}
+                        </div>
+                        <div className="flex gap-1 items-center scale-[0.8] text-lg text-(--title)">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                            </svg>
+                            <span>연구실</span>
+                        </div>
+                    </div>
+                
+            </motion.div>
+        </Link>
+    )
+}
+
 const SpeakerItem = (props: { image: string, name: string, desc: string, career: string[], academy: string[], speech: Speech, priority?: boolean, objectX?: number }) => {
     return (
         <div className="mt-15">
@@ -61,6 +88,17 @@ export default function Speaker() {
     return (
         <div className="w-[80vw] lg:w-[70vw] mx-auto text-black">
             <div className="flex items-center gap-12 mt-27 lg:mt-31">
+                <h1 className="text-(--title) text-4xl font-black">PROFESSORS</h1>
+                <div className="hidden lg:block grow bg-(--title) h-1"></div>
+            </div>
+            <div className="mt-12 lg:grid lg:grid-cols-3 gap-y-5 flex flex-col mb-20">
+                <ProfessorItem name="김진규" image="/professor/1.jpg" url="https://visionai.korea.ac.kr/"/>
+                <ProfessorItem name="박성우" image="/professor/2.jpg" url="https://www.gi.korea.ac.kr/"/>
+                <ProfessorItem name="서홍석" image="/professor/3.jpg" url="https://miil.korea.ac.kr/"/>
+                <ProfessorItem name="문경식" image="/professor/4.jpg" url="https://www.vcai.korea.ac.kr/"/>
+                <ProfessorItem name="강형엽" image="/professor/5.jpg" url="https://iiixr.korea.ac.kr/home"/>
+            </div>
+            <div className="flex items-center gap-12 mt-27 lg:mt-31">
                 <h1 className="text-(--title) text-4xl font-black">INVITED SPEAKERS</h1>
                 <div className="hidden lg:block grow bg-(--title) h-1"></div>
             </div>
@@ -95,28 +133,44 @@ export default function Speaker() {
                     "前) 서울특별시 4차 산업혁명위원회 위원",
                     "前) KAIST-KT 공동연구센터 공동연구소장"
                 ]} academy={[
-                    "MIT EECS/CSAIL (Media lab 부전공)석/박사(‘09)",
-                    "KAIST 전산학과(응용수학,경영공학부전공)학사('03)"
+                    "2009 MIT EECS/CSAIL (Media lab 부전공) 석/박사",
+                    "2003 KAIST 전산학과 (응용수학,경영공학부전공) 학사"
                 ]} speech={{
                     name: "K Intelligence: 한국적 AI로 여는 산업 혁신",
                     content: ""
                 }} priority/>
 
                 <SpeakerItem image="/speaker/4.png" name="이문태" desc="LG AI 연구소" academy={[
-                    "2001-2006 서강대학교 졸업",
-                    "2009-2012 스탠포드 석사 졸업",
-                    "2012-2018 코넬 박사 졸업"
+                    "2012 ~ 2018 코넬 박사",
+                    "2009 ~ 2012 스탠포드 석사",
+                    "2001 ~ 2006 서강대학교 학사"
                 ]} career={[
-                    "2019-2022 Research Scientist, Microsoft Research",
-                    "2018-현재 Assistant Professor, University of Illinois Chicago",
-                    "2021-2022 Director, LG AI Research",
-                    "2023-2024 Senior Director, LG AI Research",
-                    "2025-현재 Vice President, LG AI Research"
+                    "2025 ~ 현재 Vise President, LG AI Research",
+                    "2023 ~ 2024 Senior Director, LG AI Research",
+                    "2021 ~ 2022 Director, LG AI Research",
+                    "2019 ~ 2022 Research Scientist, Microsoft Research",
+                    "2018 ~ 현재 Assistant Professor, University of Illinois Chicago"
                 ]} speech={{
                     name: "From Data to Agents: Scaling the GenAI Ecosystem",
                     content: `파인튜닝이 반드시 필요한 도메인과 태스크들
 학습 데이터를 어떻게 자동생성하고 품질의 자동검수를 진행할지
 생성된 데이터로 어떤 에이전트들을 자동으로 학습하고 AI Transformation을 가속화 할지`
+                }}/>
+
+                <SpeakerItem image="/speaker/7.png" name="홍진배" desc="정보통신기획평가원" academy={[
+                    "2008 멘체스터대학교 기술경영학 박사",
+                    "2005 런던정치경제대학교 정보경영학 석사",
+                    "1995 고려대학교 무역학과 학사"
+                ]} career={[
+                    "2024. 02. 정보통신기획평가원 원장",
+                    "2022. 02. 과학기술정보통신부 네트워크정책실장",
+                    "2021. 02. 과학기술정보통신부 정보보호네트워크정책관",
+                    "2019. 02 과학기술정보통신부 통신정책관",
+                    "1994.    행정고시 제38회 합격"
+                ]} speech={{
+                    name: "AX 2.0시대 우리의 준비",
+                    content: `최근 급변하고 있는 AI 트렌드를 심층 분석하고, AX 2.0 시대를 주도할 핵심 주권 기술인 AI 모델, AI 반도체, 차세대 네트워크, 보안 기술의 발전 현황과 중요성을 공유합니다.
+이와 함께, 우리나라가 글로벌 AI 경쟁에서 살아남기 위해 R&D 혁신 방향과 AI 시대의 새로운 기회를 포착하고, 미래를 선도할 방안을 함께 모색합니다.`
                 }}/>
 
                 <SpeakerItem image="/speaker/1.png" name="최창규" desc="삼성전자" career={[
@@ -134,15 +188,15 @@ export default function Speaker() {
                 }}/>
 
                 <SpeakerItem name="김경윤" image="/speaker/2.png" desc="AWS" academy={[
-                    "2020-2021 알토대(구 헬싱키경제대) 경영학석사 졸업",
-                    "1988-1992 서울대학교 자연대 계산통계학과 졸업"
+                    "2020 ~ 2021 알토대 (구 헬싱키경제대) 경영학 석사",
+                    "1988 ~ 1992 서울대학교 자연대 계산통계학과 학사"
                 ]} career={[
-                    "현재: 아마존웹서비스 솔루션아키텍트 매니저",
-                    "2020-2021: 퀘스트글로벌 CTO",
-                    "2005-2020: 마이크로소프트 솔루션 사업부 총괄",
-                    "2003-2005 시벨시스템 컨설턴트",
-                    "1999-2002 오원 (글로벌 온라인 투자은행 start-up) 기술이사",
-                    "1995-1998 오라클 소프트웨어 엔지니어"
+                    "현재         아마존웹서비스 솔루션아키텍트 매니저",
+                    "2020 ~ 2021 퀘스트글로벌 CTO",
+                    "2005 ~ 2020 마이크로소프트 솔루션 사업부 총괄",
+                    "2003 ~ 2005 시벨시스템 컨설턴트",
+                    "1999 ~ 2002 오원 (글로벌 온라인 투자은행 start-up) 기술이사",
+                    "1995 ~ 1998 오라클 소프트웨어 엔지니어"
                 ]} speech={{
                     name: "Agentic AI on AWS",
                     content: `생성형 인공지능 기술은 빠르게 발전하면서 다양한 인공지능 에이전트 출현하고 있고, 그 에이전트들이 연결되어 복잡한 문제를 처리하는 에이전트 인공지능 시스템으로 변화가 보입니다.
@@ -151,24 +205,26 @@ export default function Speaker() {
                 }}/>
 
                 <SpeakerItem name="윤상두" desc="네이버" image="/speaker/5a.png" academy={[
-                    "서울대학교 전기컴퓨터공학부 박사 (2017)",
-                    "서울대학교 전기컴퓨터공학부 석사 (2013)",
-                    "서울대학교 전기컴퓨터공학부 학사 (2010)"
+                    "2017 서울대학교 전기컴퓨터공학부 박사",
+                    "2013 서울대학교 전기컴퓨터공학부 석사",
+                    "2010 서울대학교 전기컴퓨터공학부 학사"
                 ]} career={[
-                    "2023 - 현재 네이버 AI Lab Research Director",
-                    "2022 - 현재 서울대학교 AI연구원 겸임 교수",
-                    "2018 - 2022 네이버 AI Lab Research Scientist"
+                    "2023 ~ 현재 네이버 AI Lab Research Director",
+                    "2022 ~ 현재 서울대학교 AI연구원 겸임 교수",
+                    "2018 ~ 2022 네이버 AI Lab Research Scientist",
                 ]} speech={{
                     name: "멀티모달 관련된 주제예정",
                     content: ``
                 }}/>
 
-                <SpeakerItem image="/speaker/3.png" name="성준식" desc="크래프톤" academy={["2012 서울대학교 박사 졸업"]}
+                <SpeakerItem image="/speaker/3.png" name="성준식" desc="크래프톤" academy={[
+                    "2012 서울대학교 전기컴퓨터공학부 박사"
+                ]}
                 career={[
-                    "2025년 크래프톤 AI Interactive Agent 실장, AI 제작혁신 실장(겸), AI 서비스 실장(겸)",
-                    "2023년 크래프톤 응용 딥러닝실 실장",
-                    "2016~2022년 삼성전자 무선사업부 AI팀 (빅스비 보이스 개발)",
-                    "2013~2015년 삼성전자 무선사업부 S보이스 개발그룹"
+                    "2025 크래프톤 AI Interactive Agent 실장, AI 제작혁신 실장(겸), AI 서비스 실장 겸)",
+                    "2023 크래프톤 응용 딥러닝실 실장",
+                    "2016 ~ 2022 삼성전자 무선사업부 AI팀 (빅스비 보이스 개발)",
+                    "2013 ~ 2015 삼성전자 무선사업부 S보이스 개발그룹",
                 ]} speech={{
                     name: "AI X GAME - 크래프톤에서의 AI 적용 사례 ",
                     content: `Generative AI의 게임 제작 적용 가능성
