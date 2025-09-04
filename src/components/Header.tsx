@@ -23,7 +23,7 @@ export const Header = () => {
                     <LinkText link="/" white>Home</LinkText>
                     <LinkText link="/program" white>프로그램</LinkText>
                     <LinkText link="/speaker" white>연사소개</LinkText>
-                    <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" white>사전등록</LinkText>
+                    <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" blank white>사전등록</LinkText>
                     <LinkText link="/location" white>오시는길</LinkText>
                 </div>
                 <div className="lg:hidden" onClick={() => setOpened(true)}>
@@ -46,8 +46,8 @@ export const Header = () => {
                         <div className="text-center mt-15 flex flex-col gap-5 text-xl font-bold items-start px-5">
                             <LinkText link="/" white onClick={handleClick}>Home</LinkText>
                             <LinkText link="/program" white onClick={handleClick}>프로그램</LinkText>
-                            <LinkText link="/professor" white onClick={handleClick}>교수소개</LinkText>
                             <LinkText link="/speaker" white onClick={handleClick}>연사소개</LinkText>
+                            <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" white blank onClick={handleClick}>사전등록</LinkText>
                             <LinkText link="/location" white onClick={handleClick}>오시는길</LinkText>
                         </div>
                     </motion.div>
