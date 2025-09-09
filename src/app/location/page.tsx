@@ -2,6 +2,7 @@
 
 import { LinkText } from "@/components/LinkText";
 import useKakaoLoader from "@/hooks/useKakaoLoader"
+import Image from "next/image";
 import { Map, MapMarker } from "react-kakao-maps-sdk"
 
 const Title = (props: { text: string }) => {
@@ -61,6 +62,9 @@ export default function Location() {
                 </Map>
             </div>
             <Title text="행사장 도면"/>
+            <div className="w-80 h-80 lg:w-100 lg:h-100 mt-5">
+                <Image src={"/image.png"} width={100} height={100} className="w-full h-full object-contain" alt=""/>
+            </div>
         </div>
     )
 }

@@ -137,10 +137,13 @@ export default function Speaker() {
                     "2003 KAIST 전산학과 (응용수학,경영공학부전공) 학사"
                 ]} speech={{
                     name: "K Intelligence: 한국적 AI로 여는 산업 혁신",
-                    content: ""
+                    content: `KT는 K Intelligence를 통해 공공, 금융, 법률, 교육, 의료 등 핵심 산업에서 AI 혁신을 주도하고 있습니다.
+믿:음 등 독자 모델로 한국어와 한국적 맥락을 강화하고 글로벌 협업을 확대하고 있습니다.
+K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발, 정밀한 지식 활용, 손쉬운 서비스 구축을 지원합니다.
+이번 발표에서는 기술적 차별성과 더불어, 미래 인재가 주도할 수 있는 한국적 AI 혁신의 방향을 제시합니다.`
                 }} priority/>
 
-                <SpeakerItem image="/speaker/4.png" name="이문태" desc="LG AI 연구소" academy={[
+                <SpeakerItem image="/speaker/4.png" name="이문태" desc="LG AI 연구원" academy={[
                     "2012 ~ 2018 코넬 박사",
                     "2009 ~ 2012 스탠포드 석사",
                     "2001 ~ 2006 서강대학교 학사"
@@ -213,8 +216,10 @@ export default function Speaker() {
                     "2022 ~ 현재 서울대학교 AI연구원 겸임 교수",
                     "2018 ~ 2022 네이버 AI Lab Research Scientist",
                 ]} speech={{
-                    name: "멀티모달 관련된 주제예정",
-                    content: ``
+                    name: "Towards robust and efficient multi-modal AI",
+                    content: `AI research trends in the large foundation model era
+NAVER AI's research on reliable and efficient multimodal AI
+Discussion on the future direction of multimodal AI`
                 }}/>
 
                 <SpeakerItem image="/speaker/3.png" name="성준식" desc="크래프톤" academy={[

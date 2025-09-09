@@ -43,12 +43,12 @@ export default function Program() {
                 <tbody>
                     <Row start="10:00" end="10:10" program="개회사" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
                     <Row start="10:10" end="10:40" program="K Intelligence: 한국적 AI로 여는 산업 혁신" organizer="배순민 AI Future Lab장" note="KT"/>
-                    <Row start="10:40" end="11:00" program="TBD" organizer="김진규 교수" note="고려대 컴퓨터학과"/>
+                    <Row start="10:40" end="11:00" program="K-Drive: AI 기반 미래 모빌리티 혁신" organizer="김진규 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="11:00" end="11:10" program="Break" center/>
 
-                    <Row start="11:10" end="11:40" program="From Data to Agents: Scaling the GenAI Ecosystem" organizer="이문태 부사장" note="LG AI 연구소"/>
-                    <Row start="11:40" end="12:00" program="TBD" organizer="박성우 교수" note="고려대 컴퓨터학과"/>
+                    <Row start="11:10" end="11:40" program="From Data to Agents: Scaling the GenAI Ecosystem" organizer="이문태 부사장" note="LG AI 연구원"/>
+                    <Row start="11:40" end="12:00" program="From Equations to Insights: AI-Driven Scientific Discovery" organizer="박성우 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="12:00" end="13:30" program="점심" center/>
 
@@ -58,17 +58,17 @@ export default function Program() {
                     <Row start="14:30" end="14:40" program="Break" center/>
 
                     <Row start="14:40" end="15:10" program="Agentic AI on AWS" organizer="김경윤 솔루션아키텍트 매니저" note="AWS"/>
-                    <Row start="11:40" end="12:00" program="TBD" organizer="서홍석 교수" note="고려대 컴퓨터학과"/>
+                    <Row start="15:10" end="15:30" program="Conversational Agentic AI: Clarifying Ambiguity for Intentional Actions" organizer="서홍석 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="15:30" end="16:00" program="Coffee Break 및 포스터 세션" center/>
 
-                    <Row start="16:00" end="16:30" program="TBD" organizer="윤상두 AI Lab Research Director" note="네이버"/>
-                    <Row start="16:30" end="16:50" program="TBD" organizer="문경식 교수" note="고려대 컴퓨터학과"/>
+                    <Row start="16:00" end="16:30" program="Towards Robust and Efficient Multi-modal AI" organizer="윤상두 AI Lab Research Director" note="네이버"/>
+                    <Row start="16:30" end="16:50" program="Animating 3D Digital Humans from a Single Image to Any Motion: Bridging 3D Vision and Generative AI" organizer="문경식 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="16:50" end="17:00" program="Break" center/>
 
                     <Row start="17:00" end="17:30" program="AI X GAME - 크래프톤에서의 AI 적용 사례" organizer="성준식 AI Interactive Agent 실장" note="크래프톤"/>
-                    <Row start="17:30" end="17:50" program="TBD" organizer="강형엽 교수" note="고려대 컴퓨터학과"/>
+                    <Row start="17:30" end="17:50" program="Embodied Agent in Digital World" organizer="강형엽 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="17:50" end="18:00" program="시상 및 폐회사 (포스터/데모)" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
                 </tbody>
