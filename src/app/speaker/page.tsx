@@ -143,7 +143,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
 이번 발표에서는 기술적 차별성과 더불어, 미래 인재가 주도할 수 있는 한국적 AI 혁신의 방향을 제시합니다.`
                 }} priority/>
 
-                <SpeakerItem image="/speaker/4.png" name="이문태" desc="LG AI 연구원" academy={[
+                <SpeakerItem image="/speaker/4.jpg" name="이문태" desc="LG AI 연구원" academy={[
                     "2012 ~ 2018 코넬 박사",
                     "2009 ~ 2012 스탠포드 석사",
                     "2001 ~ 2006 서강대학교 학사"

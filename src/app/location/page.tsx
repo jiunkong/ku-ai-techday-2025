@@ -63,7 +63,7 @@ export default function Location() {
             </div>
             <Title text="행사장 도면"/>
             <div className="w-80 h-80 lg:w-100 lg:h-100 mt-5">
-                <Image src={"/image.png"} width={100} height={100} className="w-full h-full object-contain" alt=""/>
+                <Image src={"/image.png"} width={988} height={1300} className="w-full h-full object-contain" alt=""/>
             </div>
         </div>
     )
