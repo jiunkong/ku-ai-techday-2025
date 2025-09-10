@@ -226,7 +226,7 @@ Discussion on the future direction of multimodal AI`
                     "2012 서울대학교 전기컴퓨터공학부 박사"
                 ]}
                 career={[
-                    "2025 크래프톤 AI Interactive Agent 실장, AI 제작혁신 실장(겸), AI 서비스 실장 겸)",
+                    "2025 크래프톤 AI Interactive Agent 실장, AI 제작혁신 실장(겸), AI 서비스 실장(겸)",
                     "2023 크래프톤 응용 딥러닝실 실장",
                     "2016 ~ 2022 삼성전자 무선사업부 AI팀 (빅스비 보이스 개발)",
                     "2013 ~ 2015 삼성전자 무선사업부 S보이스 개발그룹",
