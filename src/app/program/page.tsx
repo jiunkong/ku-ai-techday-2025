@@ -47,7 +47,7 @@ export default function Program() {
 
                     <Row start="11:00" end="11:10" program="Break" center/>
 
-                    <Row start="11:10" end="11:40" program="From Data to Agents: Scaling the GenAI Ecosystem" organizer="이문태 부사장" note="LG AI 연구원"/>
+                    <Row start="11:10" end="11:40" program="From Data to Agents: Scaling the GenAI Ecosystem" organizer="이문태 Superintelligence Lab장 상무" note="LG AI 연구원"/>
                     <Row start="11:40" end="12:00" program="From Equations to Insights: AI-Driven Scientific Discovery" organizer="박성우 교수" note="고려대 컴퓨터학과"/>
 
                     <Row start="12:00" end="13:30" program="점심" center/>

@@ -148,7 +148,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2009 ~ 2012 스탠포드 석사",
                     "2001 ~ 2006 서강대학교 학사"
                 ]} career={[
-                    "2025 ~ 현재 Vise President, LG AI Research",
+                    "2025 ~ 현재 Superintelligence Lab장 상무, LG AI Research",
                     "2023 ~ 2024 Senior Director, LG AI Research",
                     "2021 ~ 2022 Director, LG AI Research",
                     "2019 ~ 2022 Research Scientist, Microsoft Research",
