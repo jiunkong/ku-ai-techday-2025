@@ -15,7 +15,7 @@ export const Header = () => {
 
     return (
         <div className="fixed top-0 w-screen h-fit z-50">
-            <div className={`flex justify-between w-screen px-6 lg:px-8 py-5 relative z-50 ${pathname === '/' ? 'text-white bg-black/90' : "text-black bg-(--foreground) shadow-lg"}`}>
+            <div className={`flex justify-between w-screen px-6 lg:px-8 py-5 relative z-50 ${pathname === '/' ? 'text-white bg-black/90 shadow-lg' : "text-black bg-(--foreground) shadow-lg"}`}>
                 <div className="font-bold text-xl">
                     <LinkText link="/" white>AI Tech Day 2025</LinkText>
                 </div>
