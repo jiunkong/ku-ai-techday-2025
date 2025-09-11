@@ -15,14 +15,14 @@ export const Header = () => {
 
     return (
         <div className="fixed top-0 w-screen h-fit z-50">
-            <div className={`flex justify-between w-screen px-6 lg:px-8 py-5 relative z-50 ${pathname === '/' ? 'text-white' : "text-black bg-(--foreground) shadow-lg"}`}>
+            <div className={`flex justify-between w-screen px-6 lg:px-8 py-5 relative z-50 ${pathname === '/' ? 'text-white bg-black/90' : "text-black bg-(--foreground) shadow-lg"}`}>
                 <div className="font-bold text-xl">
                     <LinkText link="/" white>AI Tech Day 2025</LinkText>
                 </div>
                 <div className="hidden lg:flex gap-5">
                     <LinkText link="/" white>Home</LinkText>
                     <LinkText link="/program" white>프로그램</LinkText>
-                    <LinkText link="/speaker" white>연사소개</LinkText>
+                    <LinkText link="/speaker" white>연사 소개</LinkText>
                     <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" blank white>사전등록</LinkText>
                     <LinkText link="/location" white>오시는길</LinkText>
                 </div>
@@ -46,7 +46,7 @@ export const Header = () => {
                         <div className="text-center mt-15 flex flex-col gap-5 text-xl font-bold items-start px-5">
                             <LinkText link="/" white onClick={handleClick}>Home</LinkText>
                             <LinkText link="/program" white onClick={handleClick}>프로그램</LinkText>
-                            <LinkText link="/speaker" white onClick={handleClick}>연사소개</LinkText>
+                            <LinkText link="/speaker" white onClick={handleClick}>연사 소개</LinkText>
                             <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" white blank onClick={handleClick}>사전등록</LinkText>
                             <LinkText link="/location" white onClick={handleClick}>오시는길</LinkText>
                         </div>

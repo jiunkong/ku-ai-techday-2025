@@ -143,10 +143,10 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
 이번 발표에서는 기술적 차별성과 더불어, 미래 인재가 주도할 수 있는 한국적 AI 혁신의 방향을 제시합니다.`
                 }} priority/>
 
-                <SpeakerItem image="/speaker/4.jpg" name="이문태" desc="LG AI 연구원" academy={[
-                    "2012 ~ 2018 코넬 박사",
-                    "2009 ~ 2012 스탠포드 석사",
-                    "2001 ~ 2006 서강대학교 학사"
+                <SpeakerItem image="/speaker/4.jpg" name="이문태" desc="LG AI연구원" academy={[
+                    "2012 ~ 2018 코넬대학교 컴퓨터공학 박사",
+                    "2009 ~ 2012 스탠포드대학교 컴퓨터공학 석사",
+                    "2001 ~ 2006 서강대학교 컴퓨터공학, 수학, 심리학 학사"
                 ]} career={[
                     "2025 ~ 현재 Superintelligence Lab장 상무, LG AI Research",
                     "2023 ~ 2024 Senior Director, LG AI Research",
@@ -155,9 +155,9 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2018 ~ 현재 Assistant Professor, University of Illinois Chicago"
                 ]} speech={{
                     name: "From Data to Agents: Scaling the GenAI Ecosystem",
-                    content: `파인튜닝이 반드시 필요한 도메인과 태스크들
-학습 데이터를 어떻게 자동생성하고 품질의 자동검수를 진행할지
-생성된 데이터로 어떤 에이전트들을 자동으로 학습하고 AI Transformation을 가속화 할지`
+                    content: `파인튜닝이 반드시 필요한 도메인과 태스크 식별
+학습 데이터의 자동 생성 및 품질 자동 검수
+데이터 생성에서 에이전트 학습까지, AI Transformation의 가속화`
                 }}/>
 
                 <SpeakerItem image="/speaker/7.png" name="홍진배" desc="정보통신기획평가원" academy={[
@@ -183,7 +183,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2018 삼성전자 SAIT Computer Vision Lab장 상무",
                     "2015 삼성전자 SAIT SW Solution Lab 상무",
                     "1999 삼성전자 SAIT (옛 종합기술원) 입사"
-                ]} academy={["1999 KAIST 전기및전자공학과 박사 "]} speech={{
+                ]} academy={["1987 ~ 1999  KAIST 전기및전자공학과 학/석/박사"]} speech={{
                     name: "반도체 개발 및 제조를 위한 AI",
                     content: `인공지능이 기획, 설계, 제조, 검사, 패키징 등 반도체 산업의 전 과정에 걸쳐 어떻게 융합되고 있는지 살펴봅니다.
 이러한 융합을 통해 수율 제고, 품질 향상, 시간 단축 등 실제적인 생산 효율성 증대가 가능함을 설명합니다.
@@ -223,7 +223,9 @@ Discussion on the future direction of multimodal AI`
                 }}/>
 
                 <SpeakerItem image="/speaker/3.png" name="성준식" desc="크래프톤" academy={[
-                    "2012 서울대학교 전기컴퓨터공학부 박사"
+                    "2012 서울대학교 전기컴퓨터공학부 박사",
+                    "2008 서울대학교 전기컴퓨터공학부 석사",
+                    "2006 서울대학교 전기컴퓨터공학부 학사"
                 ]}
                 career={[
                     "2025 크래프톤 AI Interactive Agent 실장, AI 제작혁신 실장(겸), AI 서비스 실장(겸)",
