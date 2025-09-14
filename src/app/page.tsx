@@ -50,7 +50,7 @@ export default function Home() {
                     <h3 className="font-bold text-2xl mt-10">초청 강연</h3>
                     <p className="mt-1">정보통신기획평가원, KT, LG AI연구원, 삼성전자, AWS, 네이버, 크래프톤</p>
                     <h3 className="font-bold text-2xl mt-5">Recruiting 참여 기업</h3>
-                    <p className="mt-1">루닛, 삼성전자, 업스테이지, 크래프톤, 퓨리오사 AI, 한화비전, AWS, KT, LG AI 연구원, SKT</p>
+                    <p className="mt-1">루닛, 삼성전자, 업스테이지, 크래프톤, 퓨리오사 AI, 한화비전, AWS, KT, LG AI연구원, SKT</p>
                 </div>
                 <div className="mt-15 lg:mt-0 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
                     <div className="w-50 h-50 overflow-hidden rounded-full mx-auto">
@@ -61,8 +61,8 @@ export default function Home() {
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    <p className="mt-3 w-full lg:w-105">
-                        고려대학교 ICT명품인재양성사업단/초지능연구센터는 올해 10월 15일(수)에 제3회 AI Tech Day를 개최합니다.
+                    <p className="mt-3 w-full lg:w-105 text-justify">
+                        고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 15일(수)에 제3회 AI Tech Day를 개최합니다.
                         본교 하나스퀘어에서 열리는 AI Tech Day 2025에서는 사업단 소속 교수들이 올해 발표한 top-tier conference 논문과
                         현재 진행 중인 연구를 결합하여 압축 발표하고, 정보통신기획평가원 원장과 KT, LG AI연구원, 삼성전자, AWS, 네이버, 크래프톤의
                         AI 연구개발 책임자들이 AI 연구개발 성과와 미래 전략을 발표합니다.
