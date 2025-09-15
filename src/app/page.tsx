@@ -23,7 +23,7 @@ conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표�
 
     return (
         <>            
-            <div className="px-5 lg:px-15 mt-30 w-screen">
+            <div className="px-5 lg:px-15 pt-30 w-screen pb-25">
                 <h2 className="lg:text-2xl font-bold">
                     고려대학교 ICT명품인재양성사업단/초지능연구센터
                 </h2>
@@ -71,7 +71,7 @@ conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표�
                     <h3 className="font-bold text-2xl mt-5">Recruiting 참여 기업</h3>
                     <p className="mt-1">루닛, 삼성전자, 업스테이지, 크래프톤, 퓨리오사 AI, 한화비전, AWS, KT, LG AI연구원, SKT</p>
                 </div>
-                <div className="mt-15 lg:mt-0 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
+                <div className="mt-45 lg:mt-30 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
                     <div className="w-50 h-50 overflow-hidden rounded-full mx-auto">
                         <Image src={"/picture.png"} width={200} height={200} alt="" className="w-full h-full object-cover object-[center_80%]"/>
                     </div>

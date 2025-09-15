@@ -102,7 +102,7 @@ export default function Speaker() {
                 <h1 className="text-(--title) text-4xl font-black">INVITED SPEAKERS</h1>
                 <div className="hidden lg:block grow bg-(--title) h-1"></div>
             </div>
-            <div className="flex flex-col lg:pl-8 mb-15">
+            <div className="flex flex-col lg:pl-8 pb-35">
                 <SpeakerItem image="/speaker/6.png" name="배순민" desc="KT" career={[
                     "2021 ~ 현재 KT AI Future Lab장 (Chief Responsible AI Officer)",
                     "2018 ~ 2020 네이버 Lead Clova AI",

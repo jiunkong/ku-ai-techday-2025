@@ -28,9 +28,9 @@ const Row = (props: { start: string, end: string, program: string, organizer?: s
 
 export default function Program() {
     return (
-        <div className="w-screen mt-30 text-black">
+        <div className="w-screen pt-30 text-black">
             <h1 className="font-black text-4xl lg:text-5xl text-center text-(--title)">PROGRAM</h1>
-            <table className="mx-auto mt-10 border-separate border-spacing-x-4 table-fixed mb-20">
+            <table className="mx-auto mt-10 border-separate border-spacing-x-4 table-fixed pb-40">
                 <thead className="text-lg text-left">
                     <tr className="hidden lg:table-row">
                         <th className="pl-2 w-36">시간</th>

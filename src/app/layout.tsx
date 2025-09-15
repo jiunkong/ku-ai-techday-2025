@@ -18,14 +18,14 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`antialiased relative w-screen h-screen`}
+        className={`antialiased relative w-screen min-h-screen`}
       > 
         <Background/>
         <Header/>
         <div className="relative">
           {children}
-          <Footer/>
         </div>
+        <Footer/>
       </body>
     </html>
   );

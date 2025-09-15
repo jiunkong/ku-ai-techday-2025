@@ -19,7 +19,7 @@ export default function Location() {
     useKakaoLoader()
 
     return (
-        <div className="w-[80vw] lg:w-[70vw] mx-auto text-black flex flex-col items-center mb-20">
+        <div className="w-[80vw] lg:w-[70vw] mx-auto text-black flex flex-col items-center pb-30">
             <div className="mt-35">
                 <div className="flex items-center w-fit mx-auto">
                     <span className="text-(--title)">

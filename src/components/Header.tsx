@@ -23,6 +23,7 @@ export const Header = () => {
                     <LinkText link="/" white>Home</LinkText>
                     <LinkText link="/program" white>프로그램</LinkText>
                     <LinkText link="/speaker" white>연사 소개</LinkText>
+                    <LinkText link="/company" white>참여 기업</LinkText>
                     <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" blank white>사전등록</LinkText>
                     <LinkText link="/location" white>오시는 길</LinkText>
                 </div>
@@ -33,7 +34,7 @@ export const Header = () => {
                 </div>
                 <AnimatePresence>
                     { opened &&
-                    <motion.div className="absolute top-0 left-0 w-screen h-80 bg-(--foreground) z-100 text-black shadow-lg"
+                    <motion.div className="absolute top-0 left-0 w-screen h-90 bg-(--foreground) z-100 text-black shadow-lg"
                         initial={{ y: -150, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -150, opacity: 0 }}
@@ -47,6 +48,7 @@ export const Header = () => {
                             <LinkText link="/" white onClick={handleClick}>Home</LinkText>
                             <LinkText link="/program" white onClick={handleClick}>프로그램</LinkText>
                             <LinkText link="/speaker" white onClick={handleClick}>연사 소개</LinkText>
+                            <LinkText link="/company" white onClick={handleClick}>참여 기업</LinkText>
                             <LinkText link="https://docs.google.com/forms/d/1NYJZySgrFojTQgK7ud3m5jnqGBF0Gyg3_Ki0wWrQKiA" white blank onClick={handleClick}>사전등록</LinkText>
                             <LinkText link="/location" white onClick={handleClick}>오시는 길</LinkText>
                         </div>
