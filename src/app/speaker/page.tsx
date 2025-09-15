@@ -104,7 +104,7 @@ export default function Speaker() {
             </div>
             <div className="flex flex-col lg:pl-8 pb-35">
                 <SpeakerItem image="/speaker/6.png" name="배순민" desc="KT" career={[
-                    "2021 ~ 현재 KT AI Future Lab장 (Chief Responsible AI Officer)",
+                    "2021 ~ 현재 KT AI Future Lab장 상무 (Chief Responsible AI Officer)",
                     "2018 ~ 2020 네이버 Lead Clova AI",
                     "2010 ~ 2017 Samsung/Hanwha Techwin AI Team Leader",
                 ]} academy={[
@@ -170,7 +170,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2021 알토대 (구 헬싱키경제대) 경영학 석사",
                     "1992 서울대학교 자연대 계산통계학과 학사"
                 ]} career={[
-                    "2022 ~ 현재 아마존웹서비스 솔루션아키텍트 매니저",
+                    "2022 ~ 현재 아마존웹서비스 Solution Architect Manager",
                     "2020 ~ 2022 퀘스트글로벌 CTO",
                     "2005 ~ 2020 마이크로소프트 솔루션 사업부 총괄",
                     "2003 ~ 2005 시벨시스템 컨설턴트",
