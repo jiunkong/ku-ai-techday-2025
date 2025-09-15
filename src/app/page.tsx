@@ -2,8 +2,15 @@
 
 import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [size, setSize] = useState<[number, number]>([0, 0])
+
+    useEffect(() => {
+        setSize([window.innerWidth, window.innerHeight])
+    }, [])
+
     const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 15일(수)에
 제3회 AI Tech Day를 개최합니다. 본교 하나스퀘어에서 열리는
 AI Tech Day 2025에서는 사업단 소속 교수들이 올해 발표한 top-tier
@@ -73,7 +80,7 @@ conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표�
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    { window.innerWidth >= 460 ?
+                    { size[0] >= 460 ?
                         <p className="mt-3 w-[460px]">
                             {intro.split('\n').map((text, idx, arr) => 
                                 <span key={idx} className={`block ${ idx < arr.length - 1 ? "[text-align-last:justify]" : ""}`}>{text}</span>
