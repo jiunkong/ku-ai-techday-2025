@@ -1,7 +1,19 @@
+"use client";
+
 import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
 
 export default function Home() {
+    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 15일(수)에
+제3회 AI Tech Day를 개최합니다. 본교 하나스퀘어에서 열리는
+AI Tech Day 2025에서는 사업단 소속 교수들이 올해 발표한 top-tier
+conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표하고,
+정보통신기획평가원 원장과 KT, LG AI연구원, 삼성전자, AWS, 네이버,
+크래프톤의 AI 연구개발 책임자들이 AI 연구개발 성과와 미래 전략을
+발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이
+준비되고, 기업체 홍보 및 리크루팅 프로그램도 마련됩니다. AI의 현재와
+미래를 보고자 하는 분들의 많은 참석 바랍니다.`
+
     return (
         <>            
             <div className="px-5 lg:px-15 mt-30 w-screen">
@@ -61,14 +73,17 @@ export default function Home() {
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    <p className="mt-3 w-full lg:w-105 text-justify">
-                        고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 15일(수)에 제3회 AI Tech Day를 개최합니다.
-                        본교 하나스퀘어에서 열리는 AI Tech Day 2025에서는 사업단 소속 교수들이 올해 발표한 top-tier conference 논문과
-                        현재 진행 중인 연구를 결합하여 압축 발표하고, 정보통신기획평가원 원장과 KT, LG AI연구원, 삼성전자, AWS, 네이버, 크래프톤의
-                        AI 연구개발 책임자들이 AI 연구개발 성과와 미래 전략을 발표합니다.
-                        여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리크루팅 프로그램도 마련됩니다. 
-                        AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.
-                    </p>
+                    { window.innerWidth >= 460 ?
+                        <p className="mt-3 w-[460px]">
+                            {intro.split('\n').map((text, idx, arr) => 
+                                <span key={idx} className={`block ${ idx < arr.length - 1 ? "[text-align-last:justify]" : ""}`}>{text}</span>
+                            )}
+                        </p>
+                        :
+                        <p className="mt-3 w-full text-justify">
+                            {intro}
+                        </p>
+                    }
                     <LinkText link="https://mpij.korea.ac.kr/mpij/index.do" className="origin-right mt-2 mb-20 lg:mb-0" blank>
                         <div className="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
