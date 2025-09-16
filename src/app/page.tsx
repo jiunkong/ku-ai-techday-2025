@@ -68,7 +68,7 @@ conference 논문과 현재 진행 중인 연구를 결합하여 압축 발표�
                 <div>
                     <h3 className="font-bold text-2xl mt-10">초청 강연</h3>
                     <p className="mt-1">정보통신기획평가원, KT, LG AI연구원, 삼성전자, AWS, 네이버, 크래프톤</p>
-                    <h3 className="font-bold text-2xl mt-5">Recruiting 참여 기업</h3>
+                    <h3 className="font-bold text-2xl mt-5">부스 참여 기업</h3>
                     <p className="mt-1">루닛, 삼성전자, 업스테이지, 크래프톤, 퓨리오사 AI, 한화비전, AWS, KT, LG AI연구원, SKT</p>
                 </div>
                 <div className="mt-45 lg:mt-30 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">

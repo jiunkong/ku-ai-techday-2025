@@ -70,7 +70,7 @@ export default function Program() {
                     <Row start="17:00" end="17:30" program="AI X GAME - 크래프톤에서의 AI 적용 사례" organizer="성준식 AI Interactive Agent 실장" note="크래프톤"/>
                     <Row start="17:30" end="17:50" program="Embodied Agent in Digital World" organizer="강형엽 교수" note="고려대 컴퓨터학과"/>
 
-                    <Row start="17:50" end="18:00" program="시상 및 폐회사 (포스터/데모)" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
+                    <Row start="17:50" end="18:00" program="포스터/데모 시상 및 폐회사" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
                 </tbody>
             </table>
         </div>
