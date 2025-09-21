@@ -65,7 +65,7 @@ const SpeakerItem = (props: { image: string, name: string, desc: string, career:
                         <ol className="max-h-[140px] overflow-y-auto">
                             { props.career.map((item, i) => {
                                 return (
-                                    <li key={i} className="text-sm">
+                                    <li key={i} className="text-sm whitespace-pre-wrap">
                                         {item}
                                     </li>
                                 )
@@ -153,12 +153,12 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                 }}/>
 
                 <SpeakerItem image="/speaker/1.jpg" name="최창규" desc="삼성전자" career={[
-                    "2025 ~ 현재 삼성전자 DS AI 개발실장 부사장",
-                    "2021 ~ 2024 삼성전자 SAIT AI 연구센터장 전무",
-                    "2020 ~ 2020 삼성전자 SAIT Computing Platform Lab장 상무",
-                    "2018 ~ 2019 삼성전자 SAIT Computer Vision Lab장 상무",
-                    "2015 ~ 2017 삼성전자 SAIT SW Solution Lab 상무",
-                    "1999 ~ 2014 삼성전자 SAIT (옛 종합기술원) 전문연구원",
+                    "2025 ~ 현재 삼성전자 DS, AI 개발실장 (부사장)",
+                    "2025 ~ 현재 한국공학한림원 컴퓨팅 분과, 정회원",
+                    "2021 ~ 2024 삼성전자 SAIT, AI 연구센터장",
+                    "2018 ~ 2020 삼성전자 SAIT, AI 연구센터 내 랩장",
+                    "2018               대한민국 소프트웨어산업발전유공 산업포장 수상",
+                    "2015 ~ 2017 삼성전자 SAIT, 담당임원",
                 ]} academy={["1987 ~ 1999  KAIST 전기및전자공학과 학/석/박사"]} speech={{
                     name: "반도체 개발 및 제조를 위한 AI",
                     content: `인공지능이 기획, 설계, 제조, 검사, 패키징 등 반도체 산업의 전 과정에 걸쳐 어떻게 융합되고 있는지 살펴봅니다.
