@@ -52,7 +52,7 @@ export default function Program() {
 
                     <Row start="12:00" end="13:30" program="점심" center/>
 
-                    <Row start="13:30" end="14:00" program="AX 2.0시대 우리의 준비" organizer="홍진배 원장" note="정보통신기획평가원"/>
+                    <Row start="13:30" end="14:00" program="AX2.0 시대 우리의 준비" organizer="홍진배 원장" note="정보통신기획평가원"/>
                     <Row start="14:00" end="14:30" program="반도체 개발 및 제조를 위한 AI" organizer="최창규 DS AI 개발실장/부사장" note="삼성전자"/>
 
                     <Row start="14:30" end="14:40" program="Break" center/>
