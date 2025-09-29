@@ -108,7 +108,7 @@ export default function Speaker() {
                     "2018 ~ 2020 네이버 Lead Clova AI",
                     "2010 ~ 2017 Samsung/Hanwha Techwin AI Team Leader",
                 ]} academy={[
-                    "2009 MIT EECS/CSAIL (Media lab 부전공) 석/박사",
+                    "2009 MIT EECS/CSAIL (Media Lab 부전공) 석/박사",
                     "2003 KAIST 전산학과 (응용수학,경영공학부전공) 학사"
                 ]} speech={{
                     name: "K Intelligence: 한국적 AI로 여는 산업 혁신",
@@ -126,7 +126,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2025 ~ 현재 Superintelligence Lab장 상무, LG AI Research",
                     "2023 ~ 2024 Senior Director, LG AI Research",
                     "2021 ~ 2022 Director, LG AI Research",
-                    "2019 ~ 2022 Research Scientist, Microsoft Research",
+                    "2019 ~ 2021 Research Scientist, Microsoft Research",
                     "2018 ~ 현재 Assistant Professor, University of Illinois Chicago"
                 ]} speech={{
                     name: "From Data to Agents: Scaling the GenAI Ecosystem",
@@ -192,7 +192,7 @@ K Intelligence Suite(K RAI, K RAG, K Studio 등)를 통해 책임 있는 개발,
                     "2022 ~ 현재 서울대학교 AI연구원 겸임 교수",
                     "2018 ~ 2022 네이버 AI Lab Research Scientist",
                 ]} speech={{
-                    name: "Towards robust and efficient multi-modal AI",
+                    name: "Towards Robust and Efficient Multi-modal AI",
                     content: `AI research trends in the large foundation model era
 NAVER AI's research on reliable and efficient multimodal AI
 Discussion on the future direction of multimodal AI`
